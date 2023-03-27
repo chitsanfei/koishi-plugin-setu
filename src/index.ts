@@ -22,7 +22,7 @@ export function apply(ctx: Context, config: Config) {
   ctx.command('setu', { maxUsage: config.maxUsage })
     .option('size', '-s <string>', { fallback: 'original' })
     .option('r18', '-r <number>', { fallback : '0'}) //添加一个option，控制是否有r18
-    .option('author', '-a <number>')//添加一个option，控制是否有r18
+    .option('author', '-a <number>')
     .option('excludeAI', '-A', { fallback: true })
     .action(async ({ session, options }) => {
       // 如果 allowR18 的值为 0，将 options.r18 强制设为 0，否则使用 options.r18 选项值
