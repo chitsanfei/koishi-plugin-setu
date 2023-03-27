@@ -4,16 +4,15 @@ import { } from '@koishijs/plugin-rate-limit'
 export const name = 'setu'
 
 export interface Config {
-  allowR18: number;
   maxUsage: number
   proxy: string
+  allowR18: boolean
 }
 
 export const Config: Schema<Config> = Schema.object({
   maxUsage: Schema.number().default(10).step(1).description('使用次数限制，你可以改成999999'),
   proxy: Schema.string().role('link').description('指定图片反代地址，自行选择，默认为空'),
-  // 生成allowR18的配置项，类型为number，描述为是否允许r18，默认不允许
-  allowR18: Schema.number().default(0).description('是否允许r18，偷懒改成number了，1是允许，0是不允许，默认为0，不要改其他的数字'),
+  allowR18: Schema.boolean().default(false).description('是否允许r18，默认是false，请务必不要在限制的平台使用，后果自行承担'),
 })
 
 export function apply(ctx: Context, config: Config) {
@@ -25,8 +24,8 @@ export function apply(ctx: Context, config: Config) {
     .option('author', '-a <number>')
     .option('excludeAI', '-A', { fallback: true })
     .action(async ({ session, options }) => {
-      // 如果 allowR18 的值为 0，将 options.r18 强制设为 0，否则使用 options.r18 选项值
-      const r18 = config.allowR18 === 0 ? 0 : options.r18
+      // 如果 allowR18 的值为 false，将 options.r18 强制设为 0，否则使用 options.r18 选项值
+      const r18 = config.allowR18 === false ? 0 : options.r18
       if (config.proxy) options['proxy'] = config.proxy
       const loli = await ctx.http('POST', `https://api.lolicon.app/setu/v2`, {
         data: { ...options, r18 } // 合并 options 和 r18
