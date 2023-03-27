@@ -24,6 +24,7 @@
 - 加了一点功能，但是保留了生草的代码设计，我故意的，这样你才知道我是nooooob。
 - 启动后群聊或私聊setu -h看菜单。
 - 一切后果自负嗷，别在不允许用的地方用。
+- 这个ICON是koimu，是的，我使用了PS（
 
 ## 参考
 - 基于：https://github.com/Lipraty/koishi-plugin-setu 开发
