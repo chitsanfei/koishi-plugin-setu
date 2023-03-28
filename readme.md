@@ -29,11 +29,11 @@
 - 这个ICON是koimu，是的，我使用了PS（
 
 ## 参考
-- 基于 https://github.com/Lipraty/koishi-plugin-setu 开发。
-- 机器人项目`koishi`地址：https://koishi.chat/。
+- 基于 [koishi-plugin-setu](https://github.com/Lipraty/koishi-plugin-setu) 开发。
+- 想要使用？机器人项目`Koishi`地址：[官网](https://koishi.chat/)、[开源地址](https://github.com/koishijs/koishi)。
 
 ## 注意
-- 在某些情况下，你必须确保你的服务器支持ipv6连接（即你的服务器具有公网ipv6地址），否则与lolicon api的通讯无法建立。请详见[#3](https://github.com/ShizukuWorld/koishi-plugin-setu/issues/3)。遇到这种问题请您在本地环境下测试，是否是网络问题，该问题暂不会被解决。
+- 在某些情况下，你必须确保你的服务器支持ipv6连接（即你的服务器具有公网ipv6地址），否则与lolicon api的通讯无法建立。请详见[#3](https://github.com/ShizukuWorld/koishi-plugin-setu/issues/3)。遇到这种问题请您在本地环境下测试是否是网络问题，该问题暂不会被解决。
 - 在某些平台下，发送限制色图会被AI识别并立即进入风控，你所获取的图片全部来自解析而未经处理。可行的解决方案包括更换平台，引入噪点或使用引用。最好情况下请不要使用允许限制色图。
 
 ## 许可
