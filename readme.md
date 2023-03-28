@@ -1,3 +1,5 @@
+<!-- 一个一个一个基于前人开发的色图插件。 -->
+
 <div align="center">
     <hr>
     <img src="https://raw.githubusercontent.com/ShizukuWorld/koishi-plugin-setu/master/assets/koimu.png" height="200" alt="@emuotori/koishi-plugin-setu"> 
@@ -27,10 +29,15 @@
 - 这个ICON是koimu，是的，我使用了PS（
 
 ## 参考
-- 基于：https://github.com/Lipraty/koishi-plugin-setu 开发
+- 基于 https://github.com/Lipraty/koishi-plugin-setu 开发。
+- 机器人项目`koishi`地址：https://koishi.chat/。
+
+## 注意
+- 在某些情况下，你必须确保你的服务器支持ipv6连接（即你的服务器具有公网ipv6地址），否则与lolicon api的通讯无法建立。请详见[#3](https://github.com/ShizukuWorld/koishi-plugin-setu/issues/3)。遇到这种问题请您在本地环境下测试，是否是网络问题，该问题暂不会被解决。
+- 在某些平台下，发送限制色图会被AI识别并立即进入风控，你所获取的图片全部来自解析而未经处理。可行的解决方案包括更换平台，引入噪点或使用引用。最好情况下请不要使用允许限制色图。
 
 ## 许可
-根据Koishi开发的平行原则，`shizukuworld/koishi-plugin-setu` 和 npm `@emuotori/koishi-plugin-setu` 采用 `MIT` 许可证进行开源
+保持Koishi开发许可证平行，`shizukuworld/koishi-plugin-setu` 和 npm `@emuotori/koishi-plugin-setu` 采用 `MIT` 许可证进行开源
 
 ```text
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
