@@ -1,7 +1,7 @@
 {
   "name": "@emuotori/koishi-plugin-setu",
   "description": "A simple setu program powered by Koishi.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "contributors": [
     "MashiroSA <emuotori.sekai@gmail.com>",
     "Lipraty <i@lonay.me>"
@@ -10,6 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/shizukuworld/koishi-plugin-setu.git"
   },
+  "koishi": {
+    "description": {
+      "en": "Funny anime image plugin based on the previous work." ,
+      "zh": "基于前人做了小修改的好玩的图片插件。"
+    },
+    "locales": ["zh"]
+  },
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
@@ -17,10 +24,6 @@
     "dist"
   ],
   "license": "MIT",
-  "description": {
-    "en": "Funny anime image plugin based on the previous work." ,
-    "zh": "基于前人做了小修改的好玩的图片插件。"
-  },
   "scripts": {},
   "keywords": [
     "chatbot",

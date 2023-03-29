@@ -2,7 +2,7 @@
 
 <div align="center">
     <hr>
-    <img src="https://raw.githubusercontent.com/ShizukuWorld/koishi-plugin-setu/master/assets/koimu.png" height="200" alt="@emuotori/koishi-plugin-setu"> 
+    <img src="https://raw.githubusercontent.com/ShizukuWorld/koishi-plugin-setu/master/assets/koimu.png" height="200" alt="@emuotori/koishi-plugin-setu">
     <h1>@emuotori/koishi-plugin-setu</h1>
     <b>A simple setu program powered by Koishi. 一个一个一个简易的色图插件。</b>
 </div>
