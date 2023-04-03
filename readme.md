@@ -1,11 +1,13 @@
 <!-- 一个一个一个基于前人开发的色图插件。 -->
 
+<!-- markdownlint-disable -->
 <div align="center">
     <hr>
     <img src="https://raw.githubusercontent.com/ShizukuWorld/koishi-plugin-setu/master/assets/koimu.png" height="200" alt="@emuotori/koishi-plugin-setu">
     <h1>@emuotori/koishi-plugin-setu</h1>
     <b>A simple setu program powered by Koishi. 一个一个一个简易的色图插件。</b>
 </div>
+<!-- markdownlint-restore -->
 
 ---
 
@@ -22,6 +24,7 @@
 ---
 
 ## 介绍
+
 - 就是一个很普通的色图插件呀！
 - 加了一点功能，但是保留了生草的代码设计，我故意的，这样你才知道我是nooooob。
 - 启动后群聊或私聊```help setu```看菜单，允许限制图的情况下```setu -r 1```是获取限制色图，忘记写说明了，问就是太晚了不想改😢。
@@ -29,15 +32,18 @@
 - 这个ICON是koimu，是的，我使用了PS（
 
 ## 参考
+
 - 基于 [koishi-plugin-setu](https://github.com/Lipraty/koishi-plugin-setu) 开发。
 - 想要使用？机器人项目`Koishi`地址：[官网](https://koishi.chat/)、[开源地址](https://github.com/koishijs/koishi)。
 
 ## 注意
+
 - 在某些情况下，你必须确保你的服务器支持ipv6连接（即你的服务器具有公网ipv6地址），否则与lolicon api的通讯无法建立。请详见[#3](https://github.com/ShizukuWorld/koishi-plugin-setu/issues/3)。遇到这种问题请您在本地环境下测试是否是网络问题，该问题暂不会被解决。
 - 在某些平台下，发送限制色图会被AI识别并立即进入风控，你所获取的图片全部来自解析而未经处理。可行的解决方案包括更换平台，引入噪点或使用引用。最好情况下请不要使用允许限制色图。
 
 ## 许可
-保持Koishi开发许可证平行，`shizukuworld/koishi-plugin-setu` 和 npm `@emuotori/koishi-plugin-setu` 采用 `MIT` 许可证进行开源
+
+保持Koishi开发许可证平行，`shizukuworld/koishi-plugin-setu`和npm`@emuotori/koishi-plugin-setu`采用`MIT`许可证进行开源
 
 ```text
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
@@ -51,4 +57,5 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 此外，由于本插件具有风险功能，使用本插件的功能，即表明一切后果由用户承担，本库仅展示技术实现。请务必不要在具有限制的平台（QQ，Kook，等）启用限制功能，您极有可能会违背当地法律。
 
 ## 感谢
+
 感谢Koishi项目组和Lipraty的开源项目。

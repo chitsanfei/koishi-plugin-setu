@@ -1,7 +1,7 @@
 {
   "name": "@emuotori/koishi-plugin-setu",
   "description": "A simple setu program powered by Koishi.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "contributors": [
     "MashiroSA <emuotori.sekai@gmail.com>",
     "Lipraty <i@lonay.me>"
