@@ -1,4 +1,4 @@
-name: Commit Lint
+name: CI Workflows
 
 on:
   push:
@@ -7,6 +7,14 @@ on:
     branches: [ "master" ]
 
 jobs:
+  pre-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.9"
+      - uses: pre-commit/action@v3.0.0
   commitlint:
     runs-on: ubuntu-latest
     steps:
@@ -14,3 +22,5 @@ jobs:
         with:
           fetch-depth: 0
       - uses: wagoid/commitlint-github-action@v5
+      
+  
