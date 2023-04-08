@@ -6,7 +6,7 @@ commands:
       author: 指定作者 uid 的作品
       tags: 匹配指定标签作品
       excludeAI: 排除 AI 作品
-      r18: 检索 R18 作品，参数仅允许0或1，需要权限
+      r18: 检索 R18 作品，必须启用功能才能使用，参数为0或者1
     messages:
       relax: 别急，正在给你找一个瑟图！
       error: 加载错误：{0}

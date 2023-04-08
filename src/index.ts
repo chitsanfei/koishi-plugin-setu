@@ -8,6 +8,7 @@ export interface Config {
   maxUsage: number
   proxy: string
   allowR18: boolean
+  defaultPicSize: string
   useFigure: boolean
   replyNumber: number
   longPicWarning: boolean
@@ -15,11 +16,18 @@ export interface Config {
 }
 
 export const Config: Schema<Config> = Schema.object({
-  version: Schema.string().default('1.0.3-canary').description('😭 写完才发现原来有其他能用的插件了，我仿佛是小丑，所以摆烂了！'),
+  version: Schema.string().default('1.0.4').description('😭 写完才发现原来有其他能用的插件了，我仿佛是小丑，所以摆烂了！'),
   api: Schema.string().role('link').default('https://api.lolicon.app/#/').description('🤔 芝士API地址，改了也没什么用，只是告诉你如果遇到网络问题，先多试几次，然后排查你能不能与这个网站建立链接，你可以在服务器使用ping或ping6'),
   maxUsage: Schema.number().default(10).step(1).description('🔢 单日个人使用次数限制，好像和指令的控制重复了，你可以改成999999'),
   proxy: Schema.string().role('link').description('🔗 指定图片反代地址，自行选择，默认为空'),
   allowR18: Schema.boolean().default(false).description('🚫 是否允许r18，默认是false，请务必不要在限制的平台使用，后果自行承担'),
+  defaultPicSize: Schema.union([
+    Schema.const('original').description('原图(original, 不推荐)'),
+    Schema.const('regular').description('普通(regular)'),
+    Schema.const('small').description('小图(small)'),
+    Schema.const('thumb').description('极小图(thumb)'),
+    Schema.const('mini').description('迷你图(mini, 你认真的？)'),
+  ]).description('☔️ 默认图片大小，默认是普通（regular），如果你遇到图片发不出可以降低画质').default('regular'),
   useFigure: Schema.boolean().default(false).description('🫧 使用集合回复，在某些适配器上会出问题，但是能解决部分发不出图的问题'),
   replyNumber: Schema.number().default(1).max(10).min(1).step(1).description('🐛 一次色图请求的回复图片数量，数字从1-10，默认为1，请节制，最好设置指令请求间隔，给你个警告，真别用这个，图容易掉不说，你舍得你的号么:D'),
   longPicWarning: Schema.boolean().default(false).description('😡 将错误信息替换成龙图，愚人节限定，但是你舍得打破这份宁静么'),
@@ -30,8 +38,8 @@ export function apply(ctx: Context, config: Config) {
   const logger = ctx.logger('setu')
   ctx.i18n.define('zh', require('./locales/zh'))
   ctx.command('setu', { maxUsage: config.maxUsage })
-    .option('size', '-s <string>', { fallback: 'original' })
-    .option('r18', '-r <number>', { fallback : '0'}) //添加一个option，控制是否有r18
+    .option('size', '-s <string>', { fallback: config.defaultPicSize })
+    .option('r18', '-r <number>', { fallback : 0 }) //添加一个option，控制是否有r18
     .option('author', '-a <number>')
     .option('excludeAI', '-A', { fallback: true })
     .action(async ({ session, options }) => {
