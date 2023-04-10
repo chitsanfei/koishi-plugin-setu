@@ -3,7 +3,7 @@
 <!-- markdownlint-disable -->
 <div align="center">
     <hr>
-    <img src="https://raw.githubusercontent.com/ShizukuWorld/koishi-plugin-setu/master/assets/koimu.png" height="200" alt="@emuotori/koishi-plugin-setu">
+    <img src="https://raw.githubusercontent.com/mashirosa/koishi-plugin-setu/master/assets/koimu.png" height="200" alt="@emuotori/koishi-plugin-setu">
     <h1>@emuotori/koishi-plugin-setu</h1>
     <b>A simple setu program powered by Koishi. 一个一个一个简易的色图插件。</b>
 </div>
@@ -11,15 +11,15 @@
 
 ---
 
-[![Github Issue](https://img.shields.io/github/issues/ShizukuWorld/koishi-plugin-setu)](https://github.com/ShizukuWorld/koishi-plugin-setu/issues)
-[![Github Forks](https://img.shields.io/github/forks/ShizukuWorld/koishi-plugin-setu)](https://github.com/ShizukuWorld/koishi-plugin-setu/fork)
-[![Github Stars](https://img.shields.io/github/stars/ShizukuWorld/koishi-plugin-setu)](https://github.com/ShizukuWorld/koishi-plugin-setu)
-[![GitHub License](https://img.shields.io/github/license/ShizukuWorld/koishi-plugin-setu)](https://github.com/ShizukuWorld/koishi-plugin-setu/blob/master/LICENSE)
+[![Github Issue](https://img.shields.io/github/issues/mashirosa/koishi-plugin-setu)](https://github.com/mashirosa/koishi-plugin-setu/issues)
+[![Github Forks](https://img.shields.io/github/forks/mashirosa/koishi-plugin-setu)](https://github.com/mashirosa/koishi-plugin-setu/fork)
+[![Github Stars](https://img.shields.io/github/stars/mashirosa/koishi-plugin-setu)](https://github.com/mashirosa/koishi-plugin-setu)
+[![GitHub License](https://img.shields.io/github/license/mashirosa/koishi-plugin-setu)](https://github.com/mashirosa/koishi-plugin-setu/blob/master/LICENSE)
 [![npm](https://img.shields.io/npm/v/@emuotori/koishi-plugin-setu?style=flat-square)](https://www.npmjs.com/package/@emuotori/koishi-plugin-setu)
 
 ---
 
-![Alt](https://repobeats.axiom.co/api/embed/5862d722880c186b852fa0c7a6c26891efe50b35.svg "Repobeats analytics image")
+![Alt](https://repobeats.axiom.co/api/embed/b2b53ff9ffc2b19fa268f2976e7002edd6e2eebc.svg "Repobeats analytics image")
 
 ---
 
