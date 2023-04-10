@@ -16,7 +16,7 @@ export interface Config {
 }
 
 export const Config: Schema<Config> = Schema.object({
-  version: Schema.string().default('1.0.4').description('😭 写完才发现原来有其他能用的插件了，我仿佛是小丑，所以摆烂了！'),
+  version: Schema.string().default('1.0.5').description('😭 写完才发现原来有其他能用的插件了，我仿佛是小丑，所以摆烂了！'),
   api: Schema.string().role('link').default('https://api.lolicon.app/#/').description('🤔 芝士API地址，改了也没什么用，只是告诉你如果遇到网络问题，先多试几次，然后排查你能不能与这个网站建立链接，你可以在服务器使用ping或ping6'),
   maxUsage: Schema.number().default(10).step(1).description('🔢 单日个人使用次数限制，好像和指令的控制重复了，你可以改成999999'),
   proxy: Schema.string().role('link').description('🔗 指定图片反代地址，自行选择，默认为空'),
@@ -31,7 +31,7 @@ export const Config: Schema<Config> = Schema.object({
   useFigure: Schema.boolean().default(false).description('🫧 使用集合回复，在某些适配器上会出问题，但是能解决部分发不出图的问题'),
   replyNumber: Schema.number().default(1).max(10).min(1).step(1).description('🐛 一次色图请求的回复图片数量，数字从1-10，默认为1，请节制，最好设置指令请求间隔，给你个警告，真别用这个，图容易掉不说，你舍得你的号么:D'),
   longPicWarning: Schema.boolean().default(false).description('😡 将错误信息替换成龙图，愚人节限定，但是你舍得打破这份宁静么'),
-  longPicAddress: Schema.string().default('https://raw.githubusercontent.com/ShizukuWorld/koishi-plugin-setu/master/assets/long.jpg').description('🐲 龙图图片地址，仔细想想，好像也没有必要说是替换成龙图，替换成什么图不都行么')
+  longPicAddress: Schema.string().default('https://raw.githubusercontent.com/mashirosa/koishi-plugin-setu/master/assets/long.jpg').description('🐲 龙图图片地址，仔细想想，好像也没有必要说是替换成龙图，替换成什么图不都行么')
 })
 
 export function apply(ctx: Context, config: Config) {

@@ -32,11 +32,18 @@
 - 已弃坑，PR随意！
 
 ## 指令
+
+### 可供使用的指令
+
 <!-- markdownlint-disable -->
 |    指令     |    功能    |
 |:---------:|:--------:|
 |   setu    |   获取色图   |
 | help setu |  查看帮助菜单  |
+
+---
+
+### 可供使用的参数
 
 | 参数 |   允许值    |                                             说明                                             |
 |:--:|:--------:|:------------------------------------------------------------------------------------------:|
@@ -53,12 +60,12 @@
 
 ## 注意
 
-- 在某些情况下，你必须确保你的服务器支持ipv6连接（即你的服务器具有公网ipv6地址），否则与lolicon api的通讯无法建立。请详见[#3](https://github.com/ShizukuWorld/koishi-plugin-setu/issues/3)。遇到这种问题请您在本地环境下测试是否是网络问题，该问题暂不会被解决。
+- 在某些情况下，你必须确保你的服务器支持ipv6连接（即你的服务器具有公网ipv6地址），否则与lolicon api的通讯无法建立。遇到这种问题请您在本地环境下测试是否是网络问题，该问题暂不会被解决。
 - 在某些平台下，发送限制色图会被AI识别并立即进入风控，你所获取的图片全部来自解析而未经处理。可行的解决方案包括更换平台，引入噪点或使用引用。最好情况下请不要使用允许限制色图。
 
 ## 许可
 
-保持Koishi开发许可证平行，`shizukuworld/koishi-plugin-setu`和npm`@emuotori/koishi-plugin-setu`采用`MIT`许可证进行开源
+保持Koishi开发许可证平行，`mashirosa/koishi-plugin-setu`和npm`@emuotori/koishi-plugin-setu`采用`MIT`许可证进行开源
 
 ```text
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
@@ -73,4 +80,4 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ## 感谢
 
-感谢Koishi项目组和Lipraty的开源项目。
+感谢Koishi项目组和Lipraty的开源项目。以及每一个使用这个插件的你！
