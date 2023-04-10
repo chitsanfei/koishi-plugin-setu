@@ -1,14 +1,14 @@
 {
   "name": "@emuotori/koishi-plugin-setu",
   "description": "A simple setu program powered by Koishi.",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "contributors": [
-    "MashiroSA <emuotori.sekai@gmail.com>",
+    "EmuOtori <emuotori.sekai@gmail.com>",
     "Lipraty <i@lonay.me>"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shizukuworld/koishi-plugin-setu.git"
+    "url": "git+https://github.com/mashirosa/koishi-plugin-setu.git"
   },
   "koishi": {
     "description": {
