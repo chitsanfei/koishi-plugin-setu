@@ -12,10 +12,12 @@
   },
   "koishi": {
     "description": {
-      "en": "Funny anime image plugin based on the previous work." ,
+      "en": "Funny anime image plugin based on the previous work.",
       "zh": "基于前人做了小修改的好玩的图片插件。"
     },
-    "locales": ["zh"]
+    "locales": [
+      "zh"
+    ]
   },
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -24,7 +26,16 @@
     "dist"
   ],
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "dev": "koishi dev",
+    "build": "tsc",
+    "start": "koishi start",
+    "test": "echo \"No tests yet\""
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.0"
+  },
   "keywords": [
     "chatbot",
     "koishi",
@@ -32,5 +43,8 @@
   ],
   "peerDependencies": {
     "koishi": "^4.12.2"
+  },
+  "dependencies": {
+    "@emuotori/koishi-plugin-setu": "file:"
   }
 }
