@@ -25,6 +25,9 @@
     "dist"
   ],
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "dev": "koishi dev",
     "build": "tsc",
