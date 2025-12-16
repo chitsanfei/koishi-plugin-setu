@@ -1,3 +1,3 @@
-export * from './lolicon'
-export * from './custom'
-export * from './nekobot'
+export * from "./lolicon";
+export * from "./custom";
+export * from "./nekobot";
