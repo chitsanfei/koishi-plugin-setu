@@ -1,21 +1,22 @@
 {
-  "name": "@emuotori/koishi-plugin-setu",
+  "name": "@nenekusanagi/koishi-plugin-setu",
   "description": "A simple setu program powered by Koishi.",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "contributors": [
-    "EmuOtori <emuotori.sekai@gmail.com>",
-    "Lipraty <i@lonay.me>"
+    "NeneKusanagi <nenekusa.sekai@gmail.com>"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mashirosa/koishi-plugin-setu.git"
+    "url": "git+https://github.com/chitsanfei/koishi-plugin-setu.git"
   },
   "koishi": {
     "description": {
-      "en": "Funny anime image plugin based on the previous work." ,
+      "en": "Funny anime image plugin based on the previous work.",
       "zh": "基于前人做了小修改的好玩的图片插件。"
     },
-    "locales": ["zh"]
+    "locales": [
+      "zh"
+    ]
   },
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -24,7 +25,35 @@
     "dist"
   ],
   "license": "MIT",
-  "scripts": {},
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "koishi dev",
+    "build": "tsc",
+    "start": "koishi start",
+    "test": "echo \"No tests yet\"",
+    "pre-commit": "lint-staged",
+    "format": "prettier --write \"**/*.{ts,js,json,md,yml,yaml}\"",
+    "lint": "prettier --check \"**/*.{ts,js,json,md,yml,yaml}\""
+  },
+  "lint-staged": {
+    "*.{ts,js}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.{json,md,yml,yaml}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
+    "prettier": "^3.7.4",
+    "typescript": "^5.3.0"
+  },
   "keywords": [
     "chatbot",
     "koishi",
@@ -32,5 +61,8 @@
   ],
   "peerDependencies": {
     "koishi": "^4.12.2"
+  },
+  "dependencies": {
+    "@nenekusanagi/koishi-plugin-setu": "file:"
   }
 }
