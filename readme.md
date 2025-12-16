@@ -6,7 +6,7 @@
 
 ---
 
-[![npm version](https://img.shields.io/npm/v/@emuotori/koishi-plugin-setu.svg)](https://www.npmjs.com/package/@emuotori/koishi-plugin-setu)
+[![npm version](https://img.shields.io/npm/v/@nenekusanagi/koishi-plugin-setu.svg)](https://www.npmjs.com/package/@nenekusanagi/koishi-plugin-setu)
 [![GitHub stars](https://img.shields.io/github/stars/chitsanfei/koishi-plugin-setu)](https://github.com/chitsanfei/koishi-plugin-setu/stargazers)
 [![GitHub issues](https://img.shields.io/github/issues/chitsanfei/koishi-plugin-setu)](https://github.com/chitsanfei/koishi-plugin-setu/issues)
 [![GitHub forks](https://img.shields.io/github/forks/chitsanfei/koishi-plugin-setu)](https://github.com/chitsanfei/koishi-plugin-setu/network)
@@ -31,7 +31,7 @@
 ### 通过 npm 安装
 
 ```bash
-npm install @emuotori/koishi-plugin-setu
+npm install @nenekusanagi/koishi-plugin-setu
 ```
 
 ### 通过 Koishi 插件市场
