@@ -1,7 +1,9 @@
 export function validatePicSize(
-  size: string,
+  size?: string,
 ): size is "original" | "regular" | "small" | "thumb" | "mini" {
-  return ["original", "regular", "small", "thumb", "mini"].includes(size);
+  return (
+    !!size && ["original", "regular", "small", "thumb", "mini"].includes(size)
+  );
 }
 
 export function validateReplyNumber(num: number): boolean {
