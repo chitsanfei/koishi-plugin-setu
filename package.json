@@ -1,7 +1,7 @@
 {
   "name": "@nenekusanagi/koishi-plugin-setu",
   "description": "A simple setu program powered by Koishi.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "contributors": [
     "NeneKusanagi <nenekusa.sekai@gmail.com>"
   ],
@@ -11,8 +11,8 @@
   },
   "koishi": {
     "description": {
-      "en": "Funny anime image plugin based on the previous work.",
-      "zh": "基于前人做了小修改的好玩的图片插件。"
+      "en": "A simple setu plugin based on previous work",
+      "zh": "基于前人做了小修改的好玩的图片插件\n（重生中，旧账号没法取回了 0v0 ）"
     },
     "locales": [
       "zh"
@@ -21,8 +21,7 @@
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
-    "lib",
-    "dist"
+    "lib"
   ],
   "license": "MIT",
   "publishConfig": {
@@ -62,7 +61,7 @@
   "peerDependencies": {
     "koishi": "^4.12.2"
   },
-  "dependencies": {
-    "@nenekusanagi/koishi-plugin-setu": "file:"
+  "engines": {
+    "node": ">=16"
   }
 }
