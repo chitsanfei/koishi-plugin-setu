@@ -26,6 +26,7 @@ export class SetuService {
       return new LoliconProvider(
         config.lolicon.apiUrl,
         config.lolicon.allowR18,
+        this.ctx,
       );
     } else if (isCustomConfig(config)) {
       return new CustomProvider(config.custom.apiUrl);
